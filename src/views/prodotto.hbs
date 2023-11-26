@@ -1,0 +1,10 @@
+<h2>{{pageTitle}}</h2>
+{{#with prodotto}}
+<h4>{{title}}</h4>
+<h5>{{description}}</h5>
+<h6>Brand: {{brand}} - Category: {{category}}</h6>
+<h6>Price: {{price}} - Discount percentage: {{discountPercentage}}</h6>
+    {{#each images}}
+    <img class="img-thumbnail" src="{{this}}">
+    {{/each}}
+{{/with}}
